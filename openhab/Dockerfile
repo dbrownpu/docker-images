@@ -10,15 +10,15 @@ LABEL org.freenas.interactive="false" 		\
       org.freenas.port-mappings="8081:8081/tcp"			\
       org.freenas.volumes="[					\
 	  {							\
-	      \"name\": \"/etc/localtime\"			\
+	      \"name\": \"/etc/localtime\",			\
 	      \"descr\": \"local time\"				\
 	  },							\
 	  {							\
-	      \"name\": \"/etc/timezone\"			\
+	      \"name\": \"/etc/timezone\",			\
 	      \"descr\": \"timezone\"				\
 	  },							\
 	  {							\
-	      \"name\": \"openhab/addons\"			\
+	      \"name\": \"openhab/addons\",			\
 	      \"descr\": \"addons\"				\
 	  },							\
           {							\
