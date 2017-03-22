@@ -18,7 +18,7 @@ LABEL org.freenas.interactive="false" 		\
 	      \"descr\": \"timezone\"				\
 	  },							\
 	  {							\
-	      \"name\": \"openhab/addons\",			\
+	      \"name\": \"/openhab/addons\",			\
 	      \"descr\": \"addons\"				\
 	  },							\
           {							\
