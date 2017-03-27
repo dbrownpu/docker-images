@@ -8,7 +8,7 @@ LABEL org.freenas.interactive="false"		\
       org.freenas.web-ui-protocol="http"	\
       org.freenas.web-ui-port="8080"		\
       org.freenas.web-ui-path=""		\
-      org.freenas.port-mappings="8081:8081/tcp,8443:8443/tcp"			\
+      org.freenas.port-mappings="8080:8080/tcp,8443:8443/tcp"			\
       org.freenas.volumes="[					\
 	  {							\
 	      \"name\": \"/openhab/addons\",			\
