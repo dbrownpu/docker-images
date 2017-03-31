@@ -1,7 +1,16 @@
-FROM ncarlier/mqtt:latest
-LABEL org.freenas.interactive="false" 		\
-      org.freenas.version="1"			\
-      org.freenas.upgradeable="true"		\
-      org.freenas.expose-ports-at-host="true"	\
-      org.freenas.autostart="true"		\
-      org.freenas.port-mappings="8083:8083/tcp"			\
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y mosquitto mosquitto-clients && apt-get clean
+
+LABEL org.freenas.interactive="false"			\
+      org.freenas.version="1"				\
+      org.freenas.upgradeable="true"			\
+      org.freenas.expose-ports-at-host="true"		\
+      org.freenas.autostart="true"			\
+      org.freenas.port-mappings="8083:8083/tcp"		\
+      org.freenas.voumes="[				\
+	{						\
+		\"name\": \"/usr/sbin/mosquitto",	\
+		\"descr\": \"Config\"			\
+	}						\
+	]"						\
