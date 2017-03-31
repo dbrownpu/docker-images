@@ -8,9 +8,9 @@ LABEL org.freenas.interactive="false"			\
       org.freenas.expose-ports-at-host="true"		\
       org.freenas.autostart="true"			\
       org.freenas.port-mappings="8083:8083/tcp"		\
-      org.freenas.voumes="[				\
-	{						\
-		\"name\": \"/usr/sbin/mosquitto",	\
-		\"descr\": \"Config\"			\
-	}						\
-	]"						\
+#      org.freenas.voumes="[				\
+#	{						\
+#		\"name\": \"/usr/sbin/mosquitto",	\
+#		\"descr\": \"Config\"			\
+#	}						\
+#	]"						\
